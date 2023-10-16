@@ -21,7 +21,7 @@ h5,
 h6 {
   margin: 0;
 }
-img {
+img {display: block;
   max-width: 100%;
   height: auto;
 }
@@ -231,7 +231,7 @@ ol {
 }
 .opportunity-list {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 72px;}
 
 .size {
@@ -286,7 +286,8 @@ ol {
 
 .about {
   background: var(--CLOUD, #f4f4fd);
-  padding: 120px 0;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 .about-heder {
   color: var(--NAVY-BLUE, #2e2f42);
@@ -297,6 +298,9 @@ ol {
   letter-spacing: 0.02em;
   margin-bottom: 72px;
 }
+
+.about-list{padding-right: 12px;
+padding-left: 12px;}
 
 .team-list {
   display: flex;
@@ -309,8 +313,8 @@ ol {
 }
 
 .team-link {
-  width: 100%;
-  height: 100%;
+  width: 40px;
+  height: 40px;
   background-color: #4d5ae5;
   border-radius: 50%;
   display: flex;
@@ -332,18 +336,24 @@ ol {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-}
+    }
+
+.about-img{
+  margin-bottom: 0;
+width: 100%;
+display: block;}
+
+.about-list-item:not(:last-child){margin-bottom: 72px;};
+
 
 .team-icon {
   fill: #f4f4fd;
 }
 
-.about-list {
-  display: flex;
-  gap: 24px;
-}
+
 .guest {
   padding: 32px 0;
+
 }
 
 .about-subtittle {
@@ -365,10 +375,7 @@ ol {
   margin-bottom: 8px;
 }
 
-.icone-size {
-  width: 16px;
-  height: 16px;
-}
+
 
 .social-icon-list {
   width: 100%;
@@ -842,10 +849,47 @@ ol {
 @media screen and (min-width: 768px) {
   .container{max-width: 768px;}
 
+  .opportunity-list{gap: 24px;}
+  
   .size{
-    max-width: 356px;
+    min-width: 356px;
     width: calc((100% - 24px) / 2);
-    align-items: flex-start;
 }
 
+.opportunity-list-tittle{
+  text-align: left;}
+
+  .about-list{    display: flex;
+  flex-wrap: wrap;
+row-gap: 24px;
+column-gap: 64px;
+justify-content: center;
+align-items: center;}
+
+
+.about-list-item:not(:last-child){margin-bottom: 0px;};
+
+}
+
+
+@media screen and (min-width: 1158px){
+
+  .container{max-width: 1158px;
+    margin: 0 auto;
+  }
+  .opportunity-list{flex-wrap: nowrap;}
+
+  .size{ min-width: 264px;
+    width: calc((100% - 72px) / 4);}
+
+
+    .opotiuniti-icon{display: flex;}
+
+    .opportunity-list-text{font-weight: 400;}
+    .opportunity-list-tittle{font-size: 20px;
+      font-weight: 500;}
+
+      .about-list{flex-wrap: nowrap;
+        gap: 24px;
+      }
 }
