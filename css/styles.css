@@ -165,35 +165,48 @@ ol {
 
 .tittle {
   max-width: 1440px;
+  min-height: 432px;
   background: var(--NAVY-BLUE, #2e2f42);
-  padding-top: 188px;
   padding-bottom: 188px;
   background: var(--GREY, rgba(46, 47, 66, 0.7));
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/tittle-imager.jpg);
+    url(../images/tittle-imager-mob.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   margin-left: auto;
   margin-right: auto;
+  padding: 72px 16px;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .tittle {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/tittle-imager-mob-2x.jpg);
+  }
 }
 
 .tittle-name {
   color: var(--WHITE, #fff);
   text-align: center;
   font-family: Roboto;
-  font-size: 56px;
+  font-size: 36px;
   font-style: normal;
   font-weight: 700;
-  line-height: 1.07;
+  line-height: 1.1;
   letter-spacing: 0.02em;
   max-width: 496px;
   margin-right: 0;
   margin: 0 auto;
-  margin-bottom: 48px;
+  margin-bottom: 72px;
 }
 .tittle-button {
   background: var(--IRIS, #4d5ae5);
@@ -853,6 +866,35 @@ ol {
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
+    padding: 0;
+  }
+
+  .tittle {
+    padding: 112px 136px;
+    min-height: 436px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/tittle-imager-tab.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .tittle {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/tittle-imager-tab-2x.jpg);
+    }
+  }
+
+  .tittle-name {
+    font-size: 56px;
+    line-height: 1.07;
+    margin-bottom: 36px;
   }
 
   .opportunity-list {
@@ -905,6 +947,30 @@ ol {
     max-width: 1158px;
     padding: 0 15px;
   }
+
+  .tittle {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/tittle-imager.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .tittle {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/tittle-imager-2x.jpg);
+    }
+  }
+  .tittle-name {
+    margin-bottom: 48px;
+  }
+
   .opportunity-list {
     flex-wrap: nowrap;
   }
