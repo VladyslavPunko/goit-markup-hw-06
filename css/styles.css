@@ -21,7 +21,8 @@ h5,
 h6 {
   margin: 0;
 }
-img {display: block;
+img {
+  display: block;
   max-width: 100%;
   height: auto;
 }
@@ -232,7 +233,8 @@ ol {
 .opportunity-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 72px;}
+  gap: 72px;
+}
 
 .size {
   max-width: 288px;
@@ -299,8 +301,10 @@ ol {
   margin-bottom: 72px;
 }
 
-.about-list{padding-right: 12px;
-padding-left: 12px;}
+.about-list {
+  padding-right: 12px;
+  padding-left: 12px;
+}
 
 .team-list {
   display: flex;
@@ -336,24 +340,24 @@ padding-left: 12px;}
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-    }
+}
 
-.about-img{
+.about-img {
   margin-bottom: 0;
-width: 100%;
-display: block;}
+  width: 100%;
+  display: block;
+}
 
-.about-list-item:not(:last-child){margin-bottom: 72px;};
-
+.about-list-item:not(:last-child) {
+  margin-bottom: 72px;
+}
 
 .team-icon {
   fill: #f4f4fd;
 }
 
-
 .guest {
   padding: 32px 0;
-
 }
 
 .about-subtittle {
@@ -374,8 +378,6 @@ display: block;}
   letter-spacing: 0.02em;
   margin-bottom: 8px;
 }
-
-
 
 .social-icon-list {
   width: 100%;
@@ -475,21 +477,6 @@ display: block;}
   letter-spacing: 0.02em;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /** ====footer===== */
 
 .footer {
@@ -521,12 +508,12 @@ display: block;}
   max-width: 264px;
 }
 
-.foterlogo-p {margin-bottom: 16px ;
+.foterlogo-p {
+  margin-bottom: 16px;
   text-align: center;
   width: 288px;
   margin-bottom: 72px;
 }
-
 
 .fotersoctext {
   font-weight: 500;
@@ -534,12 +521,11 @@ display: block;}
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
-  margin-bottom: 16px;text-align: center;
-  
+  margin-bottom: 16px;
+  text-align: center;
 }
 
 .futer-soc {
- 
 }
 
 .footer-list {
@@ -575,7 +561,8 @@ display: block;}
   background-color: #31d0aa;
 }
 
-.footer-form-text {text-align:center ;
+.footer-form-text {
+  text-align: center;
   color: var(--WHITE, #fff);
   font-size: 16px;
   font-weight: 500;
@@ -607,8 +594,6 @@ display: block;}
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
-
-
 .footer-form {
   display: flex;
   flex-direction: column;
@@ -617,7 +602,6 @@ display: block;}
   justify-content: center;
   align-items: center;
 }
-
 
 .foter-btn {
   border: none;
@@ -645,18 +629,6 @@ display: block;}
 .foter-btn:focus {
   background-color: #404bbf;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 /** backdrop */
 
@@ -878,55 +850,105 @@ display: block;}
   background-color: #404bbf;
 }
 
-
 @media screen and (min-width: 768px) {
-  .container{max-width: 768px;}
+  .container {
+    max-width: 768px;
+  }
 
-  .opportunity-list{gap: 24px;}
-  
-  .size{
+  .opportunity-list {
+    gap: 24px;
+  }
+
+  .size {
     min-width: 356px;
     width: calc((100% - 24px) / 2);
+  }
+
+  .opportunity-list-tittle {
+    text-align: left;
+  }
+
+  .about-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 24px;
+    column-gap: 64px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-list-item:not(:last-child) {
+    margin-bottom: 0px;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 97.5px 164px 96px 108px;
+  }
+
+  .footer-form {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .footer-form-text,
+  .foterlogo-p,
+  .fotersoctext {
+    text-align: left;
+  }
 }
 
-.opportunity-list-tittle{
-  text-align: left;}
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding: 0 15px;
+  }
+  .opportunity-list {
+    flex-wrap: nowrap;
+  }
 
-  .about-list{    display: flex;
-  flex-wrap: wrap;
-row-gap: 24px;
-column-gap: 64px;
-justify-content: center;
-align-items: center;}
+  .size {
+    min-width: 264px;
+    width: calc((100% - 72px) / 4);
+  }
 
+  .opotiuniti-icon {
+    display: flex;
+  }
 
-.about-list-item:not(:last-child){margin-bottom: 0px;};
+  .opportunity-list-text {
+    font-weight: 400;
+  }
+  .opportunity-list-tittle {
+    font-size: 20px;
+    font-weight: 500;
+  }
 
+  .about-list {
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
 
+  .footer-container {
+    flex-wrap: nowrap;
+  }
 
-
-
-}
-
-
-@media screen and (min-width: 1158px){
-
-  .container{max-width: 1158px;
+  .container .footer-containe {
     margin: 0 auto;
   }
-  .opportunity-list{flex-wrap: nowrap;}
 
-  .size{ min-width: 264px;
-    width: calc((100% - 72px) / 4);}
+  .foterlogo-p {
+    margin-right: 120px;
+    margin-bottom: 0;
+    width: auto;
+  }
+  .footer-list {
+    margin-bottom: 0;
+  }
 
-
-    .opotiuniti-icon{display: flex;}
-
-    .opportunity-list-text{font-weight: 400;}
-    .opportunity-list-tittle{font-size: 20px;
-      font-weight: 500;}
-
-      .about-list{flex-wrap: nowrap;
-        gap: 24px;
-      }
+  .futer-soc {
+    margin-right: 80px;
+  }
 }
