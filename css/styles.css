@@ -611,7 +611,7 @@ display: block;}
 
 .footer-form {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 16px;
   margin: 0 auto;
   justify-content: center;
