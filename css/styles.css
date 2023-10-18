@@ -183,6 +183,9 @@ ol {
   height: 100vh;
   background-color: #ffffff;
   padding: 24px 24px 40px 16px;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: auto;
 }
 
 .mob-menu-modal {
