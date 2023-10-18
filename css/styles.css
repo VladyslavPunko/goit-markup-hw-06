@@ -916,72 +916,73 @@ ol {
       ),
       url(../images/tittle-imager-tab.jpg);
   }
-}
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .tittle {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/tittle-imager-tab-2x.jpg);
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .tittle {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/tittle-imager-tab-2x.jpg);
+    }
+  
+
+  .tittle-name {
+    font-size: 56px;
+    line-height: 1.07;
+    margin-bottom: 36px;
   }
-}
 
-.tittle-name {
-  font-size: 56px;
-  line-height: 1.07;
-  margin-bottom: 36px;
-}
+  .opportunity-list {
+    gap: 24px;
+  }
 
-.opportunity-list {
-  gap: 24px;
-}
+  .size {
+    min-width: 356px;
+    width: calc((100% - 24px) / 2);
+  }
 
-.size {
-  min-width: 356px;
-  width: calc((100% - 24px) / 2);
-}
+  .opportunity-list-tittle {
+    text-align: left;
+  }
 
-.opportunity-list-tittle {
-  text-align: left;
-}
+  .about-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 24px;
+    column-gap: 64px;
+    justify-content: center;
+    align-items: center;
+  }
 
-.about-list {
-  display: flex;
-  flex-wrap: wrap;
-  row-gap: 24px;
-  column-gap: 64px;
-  justify-content: center;
-  align-items: center;
-}
+  .about-list-item:not(:last-child) {
+    margin-bottom: 0px;
+  }
 
-.about-list-item:not(:last-child) {
-  margin-bottom: 0px;
-}
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 97.5px 164px 96px 108px;
+  }
 
-.footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 97.5px 164px 96px 108px;
-}
+  .footer-form {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
 
-.footer-form {
-  display: flex;
-  flex-direction: row;
-  gap: 24px;
-}
+  .footer-form-text,
+  .foterlogo-p,
+  .fotersoctext {
+    text-align: left;
+  }
 
-.footer-form-text,
-.foterlogo-p,
-.fotersoctext {
-  text-align: left;
-}
-
-.modal-window {
-  width: 408px;
-  min-height: 584px;
+  .modal-window {
+    width: 408px;
+    min-height: 584px;
+  }
 }
 
 @media screen and (min-width: 1158px) {
