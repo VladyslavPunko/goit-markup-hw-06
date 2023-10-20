@@ -464,7 +464,7 @@ ol {
 }
 
 .about-list-item {
-  max-width: 264px;
+  min-width: 264px;
   border-radius: 0px 0px 4px 4px;
   background: var(--WHITE, #fff);
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
@@ -992,11 +992,6 @@ ol {
     padding: 0 16px;
   }
 
-  .about .container,
-  .footer .container {
-    max-width: 584px;
-  }
-
   .header-nav-logo {
     margin-right: 120px;
   }
@@ -1048,6 +1043,7 @@ ol {
   }
 
   .tittle-name {
+    max-width: 496px;
     font-size: 56px;
     line-height: 1.07;
     margin-bottom: 36px;
@@ -1115,6 +1111,13 @@ ol {
 
   .mob-menu-modal {
     display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .about .container,
+  .footer .container {
+    max-width: 584px;
   }
 }
 
