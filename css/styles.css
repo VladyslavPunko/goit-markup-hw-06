@@ -58,7 +58,8 @@ ol {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-right: 76px;
+  /* margin-right: 120px; */
+  padding: 16px;
 }
 .header-nav-logo span {
   color: #2e2f42;
@@ -194,8 +195,11 @@ ol {
   justify-content: space-between;
 }
 .mob-menu-closed-320 {
-  display: block;
-  margin-left: auto;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  /* display: block; */
+  /* margin-left: auto; */
   width: 24px;
   height: 24px;
   border-radius: 50%;
@@ -207,6 +211,10 @@ ol {
 .mob-menu-icon-320 {
 }
 .mob-nav {
+}
+
+.mob-list {
+  padding-top: 72px;
 }
 
 .mob-list-item:not(:last-child) {
@@ -227,6 +235,7 @@ ol {
   margin-bottom: 48px;
 }
 .mob-adres-list {
+  font-style: normal;
 }
 .mob-adres-list-item:not(:last-child) {
   margin-bottom: 24px;
@@ -308,7 +317,7 @@ ol {
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: 0.02em;
-  max-width: 496px;
+  max-width: 217px;
   margin-right: 0;
   margin: 0 auto;
   margin-bottom: 72px;
@@ -354,9 +363,9 @@ ol {
   gap: 72px;
 }
 
-.size {
+/* .size {
   max-width: 288px;
-}
+} */
 
 .opotiuniti-icon {
   width: 264px;
@@ -420,8 +429,10 @@ ol {
 }
 
 .about-list {
-  padding-right: 12px;
-  padding-left: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .team-list {
@@ -429,10 +440,10 @@ ol {
   justify-content: center;
   gap: 24px;
 }
-.team-item {
+/* .team-item {
   width: 40px;
   height: 40px;
-}
+} */
 
 .team-link {
   width: 40px;
@@ -453,6 +464,7 @@ ol {
 }
 
 .about-list-item {
+  max-width: 264px;
   border-radius: 0px 0px 4px 4px;
   background: var(--WHITE, #fff);
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
@@ -512,7 +524,7 @@ ol {
 /** ====section4===== */
 
 .portfolio {
-  padding: 96px 16px;
+  padding: 96px 0;
 }
 .portfolio-heder {
   color: var(--NAVY-BLUE, #2e2f42);
@@ -648,13 +660,13 @@ ol {
 }
 
 .futer-soc {
+  margin-bottom: 72px;
 }
 
 .footer-list {
   display: flex;
   gap: 16px;
   justify-content: center;
-  margin-bottom: 72px;
 }
 .footer-list-item {
   width: 40px;
@@ -977,8 +989,18 @@ ol {
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
-    padding: 0;
+    padding: 0 16px;
   }
+
+  .about .container,
+  .footer .container {
+    max-width: 584px;
+  }
+
+  .header-nav-logo {
+    margin-right: 120px;
+  }
+
   .heder-list {
     display: flex;
   }
@@ -1004,7 +1026,7 @@ ol {
   }
 
   .tittle {
-    padding: 112px 136px;
+    padding: 112px 0;
     min-height: 436px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -1047,8 +1069,8 @@ ol {
   .about-list {
     display: flex;
     flex-wrap: wrap;
-    row-gap: 24px;
-    column-gap: 64px;
+    row-gap: 64px;
+    column-gap: 24px;
     justify-content: center;
     align-items: center;
   }
@@ -1060,7 +1082,7 @@ ol {
   .portfolio-list {
     align-items: center;
     justify-content: center;
-    gap: 12px;
+    column-gap: 24px;
     row-gap: 72px;
   }
 
@@ -1072,7 +1094,6 @@ ol {
   .footer-container {
     display: flex;
     flex-wrap: wrap;
-    padding: 97.5px 164px 96px 108px;
   }
 
   .footer-form {
@@ -1091,6 +1112,10 @@ ol {
     width: 408px;
     min-height: 584px;
   }
+
+  .mob-menu-modal {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -1105,10 +1130,9 @@ ol {
     justify-content: center;
     gap: 40px;
   }
-  .adress {
-    display: block;
-    padding-top: 24px;
-    padding-bottom: 24px;
+
+  .heder-container {
+    align-items: center;
   }
 
   .adres-list-link {
@@ -1116,6 +1140,7 @@ ol {
   }
 
   .tittle {
+    padding: 188px 0;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -1139,6 +1164,9 @@ ol {
     margin-bottom: 48px;
   }
 
+  .opportunity {
+    padding: 120px 0;
+  }
   .opportunity-list {
     flex-wrap: nowrap;
   }
@@ -1163,6 +1191,9 @@ ol {
   .about-list {
     flex-wrap: nowrap;
     gap: 24px;
+  }
+  .portfolio {
+    padding: 120px 0;
   }
 
   .portfolio-list {
