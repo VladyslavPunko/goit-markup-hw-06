@@ -212,9 +212,11 @@ ol {
 }
 .mob-nav {
 }
+.mob-mebu-nav {
+  padding-top: 72px;
+}
 
 .mob-list {
-  padding-top: 72px;
 }
 
 .mob-list-item:not(:last-child) {
@@ -1009,6 +1011,12 @@ ol {
   }
 
   .adress {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .heder-container {
+    align-items: center;
   }
 
   .adres-list-item {
@@ -1050,7 +1058,8 @@ ol {
   }
 
   .opportunity-list {
-    gap: 24px;
+    row-gap: 72px;
+    column-gap: 24px;
   }
 
   .size {
@@ -1227,5 +1236,6 @@ ol {
 
   .futer-soc {
     margin-right: 80px;
+    margin-bottom: 0;
   }
 }
